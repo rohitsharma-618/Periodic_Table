@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  from {
+    transform: translateY(0) translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-100px) translateX(50px) rotate(180deg);
+  }
+  to {
+    transform: translateY(-200vh) translateX(0) rotate(360deg);
+  }
+}
+
+.bg-stars {
+  background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
